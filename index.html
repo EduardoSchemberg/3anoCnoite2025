@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorando o Universo - Astronomia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Explorando o Universo</h1>
+        <nav>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#imagens">Imagens do Espaço</a></li>
+                <li><a href="#interatividade">Interatividade</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="introducao">
+        <h2>O Fascinante Mundo da Astronomia</h2>
+        <p>A astronomia é a ciência que estuda os corpos celestes, como estrelas, planetas, cometas e galáxias. Ela nos ajuda a entender melhor o nosso lugar no universo.</p>
+    </section>
+
+    <section id="imagens">
+        <h2>Imagens do Espaço</h2>
+        <div class="galeria">
+            <div class="imagem" style="background-image: url('https://via.placeholder.com/300x200?text=Estrela');">
+                <span>Estrela</span>
+            </div>
+            <div class="imagem" style="background-image: url('https://via.placeholder.com/300x200?text=Galáxia');">
+                <span>Galáxia</span>
+            </div>
+            <div class="imagem" style="background-image: url('https://via.placeholder.com/300x200?text=Planeta');">
+                <span>Planeta</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="interatividade">
+        <h2>Aprenda Sobre as Estrelas</h2>
+        <p>Passe o mouse sobre as estrelas para saber mais!</p>
+        <div class="estrela" id="estrela1" onmouseover="mostrarInformacao('Alpha Centauri')">Alpha Centauri</div>
+        <div class="estrela" id="estrela2" onmouseover="mostrarInformacao('Betelgeuse')">Betelgeuse</div>
+        <div class="estrela" id="estrela3" onmouseover="mostrarInformacao('Sirius')">Sirius</div>
+        <div id="info"></div>
+    </section>
+
+    <footer>
+        <p>© 2025 Explorando o Universo - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
